@@ -1,3 +1,5 @@
+import "../styles/Task.css"
+
 const Task = ({ task }) => {
   return (
     <div className="task">

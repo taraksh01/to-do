@@ -14,11 +14,15 @@ function App() {
     { title: "Task 5", description: "Description 5", id: "5" },
   ]);
 
+  const addTask = (newTask) => {
+    setTasks([...tasks, newTask]);
+  };
+
   return (
     <div className="app">
       <Header />
       <div className="content">
-        <SideBar />
+        <SideBar addTask={addTask} />
         <Main tasks={tasks} />
       </div>
       <Footer />

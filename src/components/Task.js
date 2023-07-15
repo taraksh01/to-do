@@ -1,8 +1,8 @@
 const Task = ({ task }) => {
   return (
     <div className="task">
-      <p>{task.title}</p>
-      <p>{task.description}</p>
+      <p className="title">{task.title}</p>
+      <p className="description">{task.description}</p>
     </div>
   );
 };

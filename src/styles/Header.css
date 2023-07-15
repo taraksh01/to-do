@@ -4,6 +4,7 @@ header {
   height: 7rem;
   display: flex;
   align-items: center;
+  border-bottom: 3px solid orange;
 }
 
 h1 {

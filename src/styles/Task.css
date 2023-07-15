@@ -1,16 +1,25 @@
 .task {
-  height: 200px;
   width: 300px;
   border: 2px solid #ffa500;
   margin: 20px;
   border-radius: 10px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.title{
+.title {
   font-size: 2.4rem;
 }
 
-.description{
+.description {
   font-size: 2rem;
+}
+
+.action {
+  align-self: flex-end;
+  display: flex;
+  gap: 20px;
 }

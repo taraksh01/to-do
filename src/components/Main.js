@@ -1,7 +1,14 @@
-const Main = () => {
+import Task from "./Task";
+import "../styles/Main.css";
+
+const Main = ({ tasks }) => {
   return (
     <main>
-      <h2>hello</h2>
+      <div>
+        {tasks.map((task) => {
+          return <Task task={task} />;
+        })}
+      </div>
     </main>
   );
 };

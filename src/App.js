@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 import Main from "./components/Main";
@@ -13,6 +13,15 @@ function App() {
     { title: "Task 4", description: "Description 4", id: "4" },
     { title: "Task 5", description: "Description 5", id: "5" },
   ]);
+
+  useEffect(() => {
+    const retriveTasks = JSON.parse(localStorage.getItem("Tasks"));
+    if (retriveTasks) setTasks(retriveTasks);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("Tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const addTask = (newTask) => {
     setTasks([...tasks, newTask]);

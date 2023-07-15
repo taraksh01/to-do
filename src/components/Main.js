@@ -1,11 +1,13 @@
 import Task from "./Task";
 import "../styles/Main.css";
 
-const Main = ({ tasks }) => {
+const Main = ({ tasks, deleteTask }) => {
   return (
     <main>
-      {tasks.map((task) => {
-        return <Task task={task} />;
+      {tasks.map((task, index) => {
+        return (
+          <Task task={task} deleteTask={deleteTask} index={index} key={index} />
+        );
       })}
     </main>
   );

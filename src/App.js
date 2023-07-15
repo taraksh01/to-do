@@ -18,12 +18,18 @@ function App() {
     setTasks([...tasks, newTask]);
   };
 
+  const deleteTask = (index) => {
+    const newTasks = [...tasks];
+    newTasks.splice(index, 1);
+    setTasks(newTasks);
+  };
+
   return (
     <div className="app">
       <Header />
       <div className="content">
         <SideBar addTask={addTask} />
-        <Main tasks={tasks} />
+        <Main tasks={tasks} deleteTask={deleteTask} />
       </div>
       <Footer />
     </div>

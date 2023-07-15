@@ -10,3 +10,9 @@ footer {
 .footer-content {
   font-size: 2rem;
 }
+
+a {
+  color: #ffa500;
+  text-decoration: none;
+  font-size: 2rem;
+}

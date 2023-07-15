@@ -7,3 +7,15 @@
   font-family: "Imprima", sans-serif;
   font-size: 10px;
 }
+.app {
+  background-color: #000000dd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}

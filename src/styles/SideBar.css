@@ -9,3 +9,15 @@
   justify-content: center;
   align-items: center;
 }
+
+form {
+  background: linear-gradient(112deg, #000 20%, #ffa500 300%);
+  border: 2px solid #ffa500;
+  border-radius: 20px;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}

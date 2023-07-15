@@ -1,14 +1,11 @@
 footer {
-  height: 4rem;
   background-color: #000000;
   color: #fff;
-  border-top: 3px solid orange;
+  border-top: 3px solid #ffa500;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  flex: 0 1 4rem;
 }
 .footer-content {
   font-size: 2rem;

@@ -18,7 +18,7 @@ const SideBar = ({ addTask }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTask(formData);
+    if (formData.title !== "" && formData.description !== "") addTask(formData);
     setFormData({
       title: "",
       description: "",

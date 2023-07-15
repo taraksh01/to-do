@@ -5,4 +5,10 @@ main {
   margin: 20px;
   border-radius: 20px;
   border-left: 2px solid orange;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  /* flex: 1 1 200px; */
 }
